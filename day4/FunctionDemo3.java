@@ -2,8 +2,10 @@ class FunctionDemo3
 {
 	public static void main(String[] args) 
 	{
-		add(5,3);
-		draw(3,4);
+	//	add(5,3);
+	//	draw(3,4);
+	print99();
+	 getLevel(65);
 	}
 
 
@@ -51,8 +53,81 @@ public static void draw(int row,int col)
 }
 /*
 需求3：定义一个功能，比较两个数是否相等。
+明确一： 这个功能的结果是什么？
+					是否相等。有，boolean。
+明确二：这个功能实现过程中是否需要未知参数来参与运算？
+                    有，两个数。
 */
+public static boolean equals(int a,int b)
+	{/*
+			if(a==b)
+				return true;
+			else
+				return false;
+
+
+
+				*/
+			//	return (a==b)?true;false; 
+
+			return a==b;
+
+}
+
+
 /*
 需求4：定义一个功能，获取两个整数中较大的那个。
+明确一： 这个功能的结果是什么？
+					有，其中的一个数。int
+明确二：这个功能实现过程中是否需要未知参数来参与运算？
+					需要，两个整数。int
 */
+
+public static int getMax(int a,int b)
+	{
+		/*if(a>b)
+			return a;
+		else
+			return b;
+*/
+		return a>b?a:b;
+}
+	/*
+	定义功能，打印99乘法表
+
+	*/
+
+	public static void print99()
+		{
+		for (int x=1;x<=9 ;x++ )
+		{
+			for (int y=1;y<=x ;y++ )
+			{
+					System.out.print(y+"*"+x+"="+y*x+"\t");
+			}
+			System.out.println();
+		}
+	}
+
+	/*
+	根据考试情况获取学生分数对应的等级
+	90-100			A
+	80-89				B
+	70-79				C
+	60-69				D
+	60以下			F
+	*/
+	public static char getLevel(int point)
+	{
+		if(point>=90&&point<=100)
+			return 'A';
+		if(point>=80&&point<=89)
+			return 'B';
+		if(point>=70&&point<=79)
+			return 'C';
+		if(point>=60&&point<=69)
+			return 'D';
+		else
+			return 'F';
+	}
 }
