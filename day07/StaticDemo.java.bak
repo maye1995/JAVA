@@ -1,8 +1,10 @@
+/*static  静态变量*/
+
 class Person
 {
 	String name;//实例变量，成员变量
 	static String country ="CN";//静态变量，类变量
-	public static void show()
+	public void show()
 	{
 		System.out.println(country+":"+name);
 	}
