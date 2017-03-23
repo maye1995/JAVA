@@ -26,6 +26,7 @@ class StaticDemo2
 		Person method();
 
 		person p =new Person();
+		p.show();
 		//System.out.println("Hello World!");
 	}
 }
