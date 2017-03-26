@@ -5,9 +5,12 @@ class ArrayToolDemo
 	public static void main(String[] args) 
 	{
 		int [] arr={1,3,4,5,6,6,7,9};
-		ArrayTool tool =new ArrayTool(); 
-		int max=tool.getMax(arr);
+		//ArrayTool tool =new ArrayTool(); 
+		int max=ArrayTool.getMax(arr);
 		System.out.println("最大值是"+arr[maxIndex]);
+
+		int max=ArrayTool.getIndex(arr,10);
+		System.out.println("index"+index);
 		//System.out.println("Hello World!");
 	}
 	/**
