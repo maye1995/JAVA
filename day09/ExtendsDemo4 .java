@@ -27,10 +27,10 @@
 class Fu
 {
 
-	int num;
+//	int num;
 	Fu()
 	{
-		num=10;
+	//	num=10;
 		System.out.println("A Hello  Fu!");
 	}
 	Fu(int x)
